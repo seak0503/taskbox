@@ -83,7 +83,7 @@ Loading.decorators = [
     <Mockstore
       taskboxState={{
         ...MockedState,
-        stats: 'loading'
+        status: 'loading'
       }}
     >
       {story()}
