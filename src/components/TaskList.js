@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Task from './Task';
@@ -76,14 +75,3 @@ export default function TaskList() {
     </div>
   );
 }
-
-TaskList.propTypes = {
-  loading: PropTypes.bool,
-  tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
-  onPinTask: PropTypes.func,
-  onArchiveTask: PropTypes.func
-};
-
-TaskList.defaultProps = {
-  loading: false
-};
