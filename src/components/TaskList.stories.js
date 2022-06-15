@@ -18,13 +18,13 @@ export const MockedState = {
   error: null
 };
 
-const Mockstore = ({ taskBoxState, children }) => (
+const Mockstore = ({ taskboxState, children }) => (
   <Provider
     store={configureStore({
       reducer: {
         taskbox: createSlice({
           name: 'taskbox',
-          initialState: taskBoxState,
+          initialState: taskboxState,
           reducers: {
             updateTaskState: (state, action) => {
               const { id, newTaskState } = action.payload;
