@@ -38,6 +38,7 @@ export default function Task({
               className={'icon-star'}
               id={`pinTask-${id}`}
               aria-label={`pinTask-${id}`}
+              role="img"
             />
           </a>
         )}
